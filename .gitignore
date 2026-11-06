@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# --- Credentials, local config and tool output ---
+# Never commit AppLovin API keys. The server keeps them in ~/.applovin-mcp/secrets/.
+.env
+.env.*
+!.env.example
+secrets/
+*.pem
+*.p8
+*.key
+*token*.json
+*keys*.json
+# Audit logs written by the server (may contain AppLovin account data)
+logs/
+*.jsonl
+*.jsonl.tmp
+# Report exports, if you save any by hand
+reports/
+*.csv
+*.json.gz
+# Tool caches, build output and OS files
+.venv/
+.venv-*/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+dist/
+build/
+.DS_Store
